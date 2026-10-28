@@ -1,0 +1,441 @@
+{
+  "source_version": "arXiv:2609.28999v2",
+  "source_pdf_sha256": "f895d195c935bcc9e3d0b14d2499f59aa497b8fcdce7d69f13fbc74d10301add",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scope": "Selected corrections, exact finite-grid algebra and analytic examples; no exhaustive audit, quantum hardware result, or speedup claim.",
+  "checks": {
+    "geometric_criterion": {
+      "field": "F(q,p)=(sin(2*pi*p),0)",
+      "Hamiltonian": "H=-cos(2*pi*p)/(2*pi)",
+      "center": [
+        0.5,
+        0.5
+      ],
+      "sigma": 0.01,
+      "directional_map": "Phi_dt(q,p)=(q+dt*sin(2*pi*p),p)",
+      "boundary_sampling_points": 65537,
+      "analytic_obstruction": "The printed raw separation includes sigma*xi_i. At dt=0 each coordinate maximum equals sigma. For partial_i F_i=0, xi=e_i proves each directional maximum is at least sigma for all dt.",
+      "candidate_repair": "Subtract the initial coordinate separation inside the absolute value. This displacement statistic vanishes as dt->0; no global stability theorem is claimed for it.",
+      "compact_symmetric_packet_mean_velocity": 1.226864312052417e-16,
+      "rows": [
+        {
+          "dt": 0.0,
+          "sampled_raw_Delta_q": 0.01,
+          "raw_Delta_p": 0.01,
+          "raw_Eq31_ratio": 0.9999999999999999,
+          "raw_ratio_rigorous_lower_bound": 1.0,
+          "corrected_displacement_ratio": 0.0,
+          "exact_corrected_displacement_ratio": 0.0
+        },
+        {
+          "dt": 1e-06,
+          "sampled_raw_Delta_q": 0.01,
+          "raw_Delta_p": 0.01,
+          "raw_Eq31_ratio": 0.9999999999999999,
+          "raw_ratio_rigorous_lower_bound": 1.0,
+          "corrected_displacement_ratio": 4.439960215340396e-06,
+          "exact_corrected_displacement_ratio": 4.439960215340383e-06
+        },
+        {
+          "dt": 0.0001,
+          "sampled_raw_Delta_q": 0.010000001964762275,
+          "raw_Delta_p": 0.01,
+          "raw_Eq31_ratio": 1.0000000982381183,
+          "raw_ratio_rigorous_lower_bound": 1.0,
+          "corrected_displacement_ratio": 0.00044399602153403974,
+          "exact_corrected_displacement_ratio": 0.0004439960215340383
+        },
+        {
+          "dt": 0.001,
+          "sampled_raw_Delta_q": 0.01000019738019762,
+          "raw_Delta_p": 0.01,
+          "raw_Eq31_ratio": 1.000009869058579,
+          "raw_ratio_rigorous_lower_bound": 1.0,
+          "corrected_displacement_ratio": 0.004439960215340397,
+          "exact_corrected_displacement_ratio": 0.004439960215340382
+        },
+        {
+          "dt": 0.01,
+          "sampled_raw_Delta_q": 0.010019719652139273,
+          "raw_Delta_p": 0.01,
+          "raw_Eq31_ratio": 1.0009864682089011,
+          "raw_ratio_rigorous_lower_bound": 1.0,
+          "corrected_displacement_ratio": 0.04439960215340397,
+          "exact_corrected_displacement_ratio": 0.04439960215340383
+        },
+        {
+          "dt": 0.03,
+          "sampled_raw_Delta_q": 0.010176094395780278,
+          "raw_Delta_p": 0.01,
+          "raw_Eq31_ratio": 1.0088431422967368,
+          "raw_ratio_rigorous_lower_bound": 1.0,
+          "corrected_displacement_ratio": 0.13319880646021193,
+          "exact_corrected_displacement_ratio": 0.13319880646021148
+        }
+      ],
+      "all_assertions_passed": true
+    },
+    "phase_and_sampling": {
+      "points": 4096,
+      "encoding": "amplitudes sqrt(weights)",
+      "exact_fringe": "P(a)=1/2+1/2*Re(exp(-2ia)*E exp(2iTheta))",
+      "scope": "Positive variance need not cause phase bias. This does not remove nonlinear cloud-to-trajectory bias. Ancilla sampling and direct coordinate sampling have distinct variance constants.",
+      "gaussian_rows": [
+        {
+          "sigma_parameter": 0.01,
+          "actual_coordinate_variance": 9.999999999999999e-05,
+          "arithmetic_mean": 0.49999999999999994,
+          "circular_phase_mean": 0.5,
+          "phase_bias": 5.551115123125783e-17,
+          "fringe_contrast": 0.9998000199986665,
+          "characteristic_moment": [
+            0.5401942562122917,
+            0.8413027074392326
+          ],
+          "reference_phases": [
+            0.17,
+            0.47,
+            0.5,
+            0.53,
+            0.83
+          ],
+          "direct_Hadamard_probabilities": [
+            0.8949171244249284,
+            0.9990004598949482,
+            0.999900009999333,
+            0.9990004598949482,
+            0.8949171244249284
+          ],
+          "characteristic_fringe_max_defect": 2.220446049250313e-16,
+          "contrast_as_phase_shift": 0.010000166674166562,
+          "constant_shift_model_max_defect": 0.006130869853039234,
+          "Eq32_encoded_mean_probability": 0.49999999999999994,
+          "ancilla_variance_per_shot": 0.24999999999999997,
+          "position_variance_per_shot": 9.999999999999999e-05,
+          "ancilla_to_position_variance_ratio": 2500.0,
+          "affine_observable_Hessian": 0.0
+        },
+        {
+          "sigma_parameter": 0.025,
+          "actual_coordinate_variance": 0.0006249999999999999,
+          "arithmetic_mean": 0.5,
+          "circular_phase_mean": 0.49999999999999994,
+          "phase_bias": -5.551115123125783e-17,
+          "fringe_contrast": 0.9987507809245809,
+          "characteristic_moment": [
+            0.5396273499211564,
+            0.8404198032022627
+          ],
+          "reference_phases": [
+            0.17,
+            0.47,
+            0.5,
+            0.53,
+            0.83
+          ],
+          "direct_Hadamard_probabilities": [
+            0.8945026790661728,
+            0.9984767843898119,
+            0.9993753904622905,
+            0.9984767843898118,
+            0.8945026790661729
+          ],
+          "characteristic_fringe_max_defect": 2.220446049250313e-16,
+          "contrast_as_phase_shift": 0.025002604899360868,
+          "constant_shift_model_max_defect": 0.015323439037437936,
+          "Eq32_encoded_mean_probability": 0.5,
+          "ancilla_variance_per_shot": 0.25,
+          "position_variance_per_shot": 0.0006249999999999999,
+          "ancilla_to_position_variance_ratio": 400.00000000000006,
+          "affine_observable_Hessian": 0.0
+        },
+        {
+          "sigma_parameter": 0.05,
+          "actual_coordinate_variance": 0.0024999999999999996,
+          "arithmetic_mean": 0.4999999999999998,
+          "circular_phase_mean": 0.4999999999999999,
+          "phase_bias": 1.1102230246251565e-16,
+          "fringe_contrast": 0.9950124791926822,
+          "characteristic_moment": [
+            0.5376075368753808,
+            0.8372741307624127
+          ],
+          "reference_phases": [
+            0.17,
+            0.47,
+            0.5,
+            0.53,
+            0.83
+          ],
+          "direct_Hadamard_probabilities": [
+            0.8930260644025761,
+            0.9966109969862007,
+            0.9975062395963409,
+            0.9966109969862006,
+            0.8930260644025763
+          ],
+          "characteristic_fringe_max_defect": 2.220446049250313e-16,
+          "contrast_as_phase_shift": 0.050020856805770036,
+          "constant_shift_model_max_defect": 0.030622428048199035,
+          "Eq32_encoded_mean_probability": 0.4999999999999998,
+          "ancilla_variance_per_shot": 0.25,
+          "position_variance_per_shot": 0.0024999999999999996,
+          "ancilla_to_position_variance_ratio": 100.00000000000001,
+          "affine_observable_Hessian": 0.0
+        },
+        {
+          "sigma_parameter": 0.1,
+          "actual_coordinate_variance": 0.009999851328775596,
+          "arithmetic_mean": 0.5,
+          "circular_phase_mean": 0.49999999999999983,
+          "phase_bias": -1.6653345369377348e-16,
+          "fringe_contrast": 0.9801989438886217,
+          "characteristic_moment": [
+            0.5296037495925379,
+            0.8248089706216184
+          ],
+          "reference_phases": [
+            0.17,
+            0.47,
+            0.5,
+            0.53,
+            0.83
+          ],
+          "direct_Hadamard_probabilities": [
+            0.8871747754969666,
+            0.98921755751677,
+            0.9900994719443111,
+            0.9892175575167697,
+            0.8871747754969668
+          ],
+          "characteristic_fringe_max_defect": 5.551115123125783e-16,
+          "contrast_as_phase_shift": 0.1001666740577983,
+          "constant_shift_model_max_defect": 0.06108237223260149,
+          "Eq32_encoded_mean_probability": 0.5,
+          "ancilla_variance_per_shot": 0.25,
+          "position_variance_per_shot": 0.009999851328775596,
+          "ancilla_to_position_variance_ratio": 25.000371683586877,
+          "affine_observable_Hessian": 0.0
+        }
+      ],
+      "all_assertions_passed": true
+    },
+    "single_frequency_nonidentifiability": {
+      "support": [
+        0.375,
+        0.4375,
+        0.5625,
+        0.625
+      ],
+      "k": 1.984395334458658,
+      "eta": 0.1,
+      "null_vector": [
+        0.503931843940159,
+        -1.0,
+        1.0,
+        -0.503931843940159
+      ],
+      "first_weights": [
+        0.3003931843940159,
+        0.15,
+        0.35,
+        0.1996068156059841
+      ],
+      "second_weights": [
+        0.1996068156059841,
+        0.35,
+        0.15,
+        0.3003931843940159
+      ],
+      "characteristic_moment_defect": 0.0,
+      "sampled_complete_fringe_defect": 0.0,
+      "first_arithmetic_mean": 0.49990170390149596,
+      "second_arithmetic_mean": 0.500098296098504,
+      "mean_difference": 0.00019659219700801644,
+      "scope": "A single-frequency reference-phase scan cannot recover the arithmetic mean of an arbitrary bounded distribution. Direct Eq32 observable encoding remains available.",
+      "all_assertions_passed": true
+    },
+    "LV_calibration": {
+      "domain": "[0,1]^2",
+      "beta": 0.7165313105737893,
+      "gamma": 1.6487212707001282,
+      "L": 2.3316439815971246,
+      "H": 2.3316439815971246,
+      "R_over_sigma_from_Eqs22_25": 0.7071067811865476,
+      "Eq45_formula_gamma_over_beta": 2.300975890892825,
+      "Eq45_printed_decimal": 2.29,
+      "R_at_sigma_point01_from_definitions": 0.007071067811865476,
+      "R_at_sigma_point01_from_printed_decimal": 0.0229,
+      "scope": "Both row gradients and row Hessians have identical norms pointwise, so H=L. The correction changes calibration, not the qualitative success of this benchmark.",
+      "all_assertions_passed": true
+    },
+    "C2_remainder": {
+      "observable": "f(x)=|x-.5|^3 on [0,1]",
+      "regularity": "C2, bounded in [0,1/8]",
+      "value_and_Hessian_at_mean": [
+        0.0,
+        0.0
+      ],
+      "untruncated_Gaussian_expectation": "2*sqrt(2/pi)*sigma^3",
+      "untruncated_coefficient": 1.5957691216057308,
+      "claim_under_test": "Eq35: O(||Sigma||^2)=O(sigma^4) remainder under only C2 regularity",
+      "scope": "Conditioning a centered Gaussian to [0,1] changes the leading cubic expectation only by exponentially small tails.",
+      "rows": [
+        {
+          "sigma": 0.08,
+          "exact_conditioned_mean_f": 0.0008170337353463396,
+          "independent_quadrature_mean_f": 0.0008170337353463242,
+          "mean_over_sigma_cubed": 1.5957690143483192,
+          "mean_over_sigma_fourth": 19.947112679353992
+        },
+        {
+          "sigma": 0.04,
+          "exact_conditioned_mean_f": 0.00010212922378276678,
+          "independent_quadrature_mean_f": 0.00010212922378276684,
+          "mean_over_sigma_cubed": 1.5957691216057308,
+          "mean_over_sigma_fourth": 39.894228040143275
+        },
+        {
+          "sigma": 0.02,
+          "exact_conditioned_mean_f": 1.2766152972845848e-05,
+          "independent_quadrature_mean_f": 1.2766152972845855e-05,
+          "mean_over_sigma_cubed": 1.5957691216057308,
+          "mean_over_sigma_fourth": 79.78845608028655
+        },
+        {
+          "sigma": 0.01,
+          "exact_conditioned_mean_f": 1.595769121605731e-06,
+          "independent_quadrature_mean_f": 1.5957691216057318e-06,
+          "mean_over_sigma_cubed": 1.5957691216057308,
+          "mean_over_sigma_fourth": 159.5769121605731
+        }
+      ],
+      "all_assertions_passed": true
+    },
+    "covariance_and_width": {
+      "rotation": {
+        "J": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0
+          ]
+        ],
+        "Sigma": [
+          [
+            4.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "correct_derivative": [
+          [
+            0.0,
+            -3.0
+          ],
+          [
+            -3.0,
+            0.0
+          ]
+        ],
+        "printed_derivative": [
+          [
+            0.0,
+            5.0
+          ],
+          [
+            -5.0,
+            0.0
+          ]
+        ]
+      },
+      "dense_linear_Hamiltonian": {
+        "J": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "Sigma0": [
+          [
+            0.26,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.25,
+            0.26,
+            0.25,
+            0.25
+          ],
+          [
+            0.25,
+            0.25,
+            0.26,
+            0.25
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.26
+          ]
+        ],
+        "actual_J_Sigma_F_squared": 4.080799999999999,
+        "sum_with_missing_cross_terms": 2.0408,
+        "appendix_rowmax_L": 1.4142135623730951,
+        "main_Eq22_L": 2.8284271247461903,
+        "time": 0.1,
+        "actual_covariance_norm": 1.5068242213515095,
+        "appendix_bound": 1.3403624548982533,
+        "main_L_bound": 1.778522171249329
+      },
+      "rescaled_local_example": {
+        "epsilon": 0.01,
+        "covariance_scale": 0.0001,
+        "actual_covariance_norm": 0.00015068242213515094,
+        "appendix_bound": 0.00013403624548982533,
+        "main_L_bound": 0.0001778522171249329,
+        "covariance_realization": "epsilon*(v*U0+sqrt(.01)*(U1,U2,U3,U4)), where independent Ui have mean0, variance1 and support[-sqrt(3),sqrt(3)]; add center(.5,.5,.5,.5). This compact distribution has covariance epsilon^2*(v*v^T+.01I).",
+        "scope": "The linear matrix example can be localized and used on a short interval before any boundary crossing. It does not establish a compact nonlinear-flow theorem."
+      },
+      "Eq41_width": {
+        "dimension": 2,
+        "isotropic_standard_deviation": 0.04,
+        "sqrt_norm_Sigma_sqrt_F_as_written": 0.23784142300054423,
+        "defined_sigma_F": 0.04
+      },
+      "scope": "Appendix transpose and dimension-constant errors are repairable. This linear matrix example does not refute the main bound using the larger Eq22 constant; no compact nonlinear simulation is asserted.",
+      "all_assertions_passed": true
+    }
+  },
+  "all_assertions_passed": true
+}

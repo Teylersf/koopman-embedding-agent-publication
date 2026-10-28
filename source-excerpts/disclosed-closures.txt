@@ -1,0 +1,28 @@
+Attributed source excerpt: Fredon, Ram, Debbasch, Zylberman and Loureiro (2026)
+Work: arXiv:2609.28999v2
+Locator: PDF p. 4, disclosed Gaussian and constant-covariance assumptions
+Original filename: Limit.tex
+Original file SHA-256: cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112
+Archive: https://arxiv.org/src/2609.28999v2
+Archive SHA-256: 663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2
+Line numbers below are original 1-based TeX source line numbers.
+The original authors retain rights in the quoted material.
+--- BEGIN LINE-NUMBERED EXCERPT ---
+561: The truncation at second order nevertheless constitutes a closure assumption: for an arbitrary distribution, higher-order statistical contributions need not be small.
+562: %
+563: Retaining all orders would instead produce a hierarchy of statistical moments, analogous to a Carleman expansion \cite{Carleman1932}, which would itself require closure.
+564: 
+565: Here, we close the hierarchy at second order by assuming that the densities remain approximately Gaussian, so that cumulants of order three and higher are negligible and the remaining moments are determined by the mean and covariance.
+[noncontiguous source ranges; intervening text omitted]
+631: Although maximizing over the phase space $\Omega$ removes the explicit dependence on $\widetilde{\mathbf{x}}$, the resulting differential inequality cannot be integrated without a closure assumption for the covariance matrix $\boldsymbol{\Sigma}$.
+632: %
+633: For the short-time regime considered here, we impose
+634: \[
+635: \left\lVert\boldsymbol{\Sigma}(t)\right\rVert_F
+636: =
+637: \left\lVert\boldsymbol{\Sigma}(t_0)\right\rVert_F.
+638: \]
+639: %
+640: This assumption is substantially stronger than phase-space volume conservation: a volume-preserving flow may deform the distribution through stretching and contraction, whereas the present closure suppresses any variation of its overall covariance scale.
+641: %
+642: Despite its restrictive nature, it provides a tractable first approximation and leads to an explicit criterion for selecting the initial covariance.

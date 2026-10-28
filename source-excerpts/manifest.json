@@ -1,0 +1,135 @@
+{
+  "checked_on": "2026-10-28",
+  "work": "Fredon, Ram, Debbasch, Zylberman and Loureiro, arXiv:2609.28999v2",
+  "source_archive": {
+    "url": "https://arxiv.org/src/2609.28999v2",
+    "http_status": 200,
+    "bytes": 740540,
+    "sha256": "663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2"
+  },
+  "source_file": {
+    "name": "Limit.tex",
+    "bytes": 99001,
+    "sha256": "cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112",
+    "line_numbering": "1-based splitlines of UTF-8 source; blank/comment lines count"
+  },
+  "pdf": {
+    "url": "https://arxiv.org/pdf/2609.28999v2",
+    "bytes": 959353,
+    "sha256": "f895d195c935bcc9e3d0b14d2499f59aa497b8fcdce7d69f13fbc74d10301add"
+  },
+  "rights": "Original quotations retain the source authors' rights; no original archive, full TeX or PDF is redistributed.",
+  "excerpts": [
+    {
+      "file": "geometric-eq30-31.txt",
+      "pdf_locator": "PDF pp. 5-6, Eqs. (30)-(31)",
+      "source_line_ranges": [
+        [
+          789,
+          825
+        ]
+      ],
+      "primary_anchors": [
+        "https://arxiv.org/html/2609.28999v2#S4.E30",
+        "https://arxiv.org/html/2609.28999v2#S4.E31"
+      ],
+      "sha256": "fc867ffa78892ce74a38fe7dd989ec49305a9d8e0b7c33f8aa8f4b638edd013c"
+    },
+    {
+      "file": "appendix-c-coordinate.txt",
+      "pdf_locator": "PDF p. 13, Eq. (C1) and its definition",
+      "source_line_ranges": [
+        [
+          1376,
+          1384
+        ]
+      ],
+      "primary_anchors": [
+        "https://arxiv.org/html/2609.28999v2#A3.E58",
+        "https://arxiv.org/html/2609.28999v2#A3.p2"
+      ],
+      "sha256": "625999e91be3dc5a4560371cb1cef7346b4069ef86e66b9523d9f5ccfa0eacd2"
+    },
+    {
+      "file": "observable-eq35-sampling.txt",
+      "pdf_locator": "PDF p. 6, Eq. (35), its regularity assumptions and following sampling claim",
+      "source_line_ranges": [
+        [
+          888,
+          904
+        ],
+        [
+          912,
+          912
+        ]
+      ],
+      "primary_anchors": [
+        "https://arxiv.org/html/2609.28999v2#S5.E35",
+        "https://arxiv.org/html/2609.28999v2#S5"
+      ],
+      "sha256": "ae4a9bf49cf4d730f8290bcd9976fddf50abb4430fbf9c69c7282ff562bee80b"
+    },
+    {
+      "file": "reynolds-definitions-eq45.txt",
+      "pdf_locator": "PDF pp. 5 and 7, definitions in Eqs. (22)-(25) and calibration Eq. (45)",
+      "source_line_ranges": [
+        [
+          653,
+          674
+        ],
+        [
+          690,
+          700
+        ],
+        [
+          1030,
+          1037
+        ]
+      ],
+      "primary_anchors": [
+        "https://arxiv.org/html/2609.28999v2#S4.E22",
+        "https://arxiv.org/html/2609.28999v2#S4.E25",
+        "https://arxiv.org/html/2609.28999v2#S6.E45"
+      ],
+      "sha256": "40249bf814ad27c09e7cee53c535e52b77384931ac7cb21ec9ca35893b0931a0"
+    },
+    {
+      "file": "grover-eqD8-D10.txt",
+      "pdf_locator": "PDF pp. 14-15, Eqs. (D8)-(D10) and subsequent precision/phase-shift claim",
+      "source_line_ranges": [
+        [
+          1568,
+          1607
+        ],
+        [
+          1614,
+          1616
+        ]
+      ],
+      "primary_anchors": [
+        "https://arxiv.org/html/2609.28999v2#A4.E68",
+        "https://arxiv.org/html/2609.28999v2#A4.E70",
+        "https://arxiv.org/html/2609.28999v2#A4.SS3"
+      ],
+      "sha256": "71697a387ee2eb6b7cac06081f13d9eb002590d5c92cd110b837bc1d6057498d"
+    },
+    {
+      "file": "disclosed-closures.txt",
+      "pdf_locator": "PDF p. 4, disclosed Gaussian and constant-covariance assumptions",
+      "source_line_ranges": [
+        [
+          561,
+          565
+        ],
+        [
+          631,
+          642
+        ]
+      ],
+      "primary_anchors": [
+        "https://arxiv.org/html/2609.28999v2#S4.SS2"
+      ],
+      "sha256": "2232347fb16f6ed9f116398a362b6b061fb1432dc1b5274b0bef732262e85d00"
+    }
+  ]
+}

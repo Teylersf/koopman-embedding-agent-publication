@@ -1,0 +1,36 @@
+{
+  "source": "github:Teylersf/koopman-embedding-agent-publication",
+  "submission": {
+    "kind": "paper",
+    "maturity": "final"
+  },
+  "project": {
+    "title": "Corrections to geometric stability and observable inference in dual Koopman embeddings",
+    "summary": "Exact source-specific counterexamples and repairs for arXiv:2609.28999v2.",
+    "research_question": "Which geometric and phase-inference statements fail as printed, and which explicit definitions and estimation assumptions repair them?",
+    "status": "active"
+  },
+  "claims": [
+    {
+      "text": "The geometric definition in source Eq30 retains initial separation. For the stated own-axis-independent directional maps, each raw separation is at least the packet width, so Eq31 normalized ratio is at least one.",
+      "kind": "finding",
+      "status": "proposed",
+      "evidence_summary": "Exact directional-flow proof and nonlinear Hamiltonian-shear check in experiments/verify.py.",
+      "confidence_note": "A correction to the printed criterion; not a universal failure of Koopman embeddings or a validated replacement threshold."
+    },
+    {
+      "text": "The reference-phase fringe encodes a circular statistic. Positive variance can reduce contrast without shifting its maximizing phase, and two explicit positive grid distributions can have identical entire fringes but different arithmetic means.",
+      "kind": "finding",
+      "status": "proposed",
+      "evidence_summary": "Exact characteristic-function identity, symmetric-packet proof, four-node construction and finite-grid Hadamard checks.",
+      "confidence_note": "Targets the specific contrast-to-phase inference; genuine nonlinear cloud-to-trajectory bias and standard amplitude estimation remain distinct."
+    },
+    {
+      "text": "The stated Lotka-Volterra field has paired gradient and Hessian norms giving H=L, so the source definitions yield R/sigma=1/sqrt(2) in dimension two rather than gamma/beta.",
+      "kind": "finding",
+      "status": "proposed",
+      "evidence_summary": "Analytic paired-norm calculation and deterministic calibration check.",
+      "confidence_note": "Corrects criterion calibration; both parameter values are small for the chosen benchmark, so qualitative benchmark failure is not asserted."
+    }
+  ]
+}

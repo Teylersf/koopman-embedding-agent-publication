@@ -1,0 +1,47 @@
+Attributed source excerpt: Fredon, Ram, Debbasch, Zylberman and Loureiro (2026)
+Work: arXiv:2609.28999v2
+Locator: PDF pp. 5-6, Eqs. (30)-(31)
+Original filename: Limit.tex
+Original file SHA-256: cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112
+Archive: https://arxiv.org/src/2609.28999v2
+Archive SHA-256: 663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2
+Line numbers below are original 1-based TeX source line numbers.
+The original authors retain rights in the quoted material.
+--- BEGIN LINE-NUMBERED EXCERPT ---
+789: For a given effective covariance width $\sigma_F$, we introduce the maximal relative drift
+790: 
+791: \begin{align}
+792: \Delta_{\sigma_F} x_i
+793: :&=
+794: \max_{\boldsymbol\xi\in \mathcal{B}^d}
+795: \left|
+796: x_i(\textbf{x}+\sigma_F\boldsymbol{\xi},\Delta t)
+797: -
+798: x_i(\textbf{x},\Delta t)
+799: \right|
+800: \\
+801: &=
+802: \Delta t
+803: \max_{\boldsymbol\xi \in \mathcal{B}^d}
+804: \left|
+805: F_i(\textbf{x}+\sigma_F\boldsymbol\xi)
+806: -
+807: F_i(\textbf{x})
+808: \right| +O(\Delta t^2).
+809: \nonumber
+810: \end{align}
+811: 
+812: Here, $\mathcal{B}^d$ denotes unit ball in dimension $d$.
+813: %
+814: As shown in App.~\ref{App: Non-Phase Mixing}, the geometrical version of criterion \ref{Eq: Numerical criterion} is
+815: 
+816: \begin{equation}
+817: \frac{
+818: \sqrt{\sum_i(\Delta_{\sigma_F}x_i)^2}
+819: }{
+820: \sqrt{d}\,\sigma_F
+821: }
+822: \lesssim
+823: 10^{-1}.
+824: \label{Eq: Pract crit}
+825: \end{equation}

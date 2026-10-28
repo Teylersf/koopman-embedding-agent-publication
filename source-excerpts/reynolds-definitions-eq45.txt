@@ -1,0 +1,53 @@
+Attributed source excerpt: Fredon, Ram, Debbasch, Zylberman and Loureiro (2026)
+Work: arXiv:2609.28999v2
+Locator: PDF pp. 5 and 7, definitions in Eqs. (22)-(25) and calibration Eq. (45)
+Original filename: Limit.tex
+Original file SHA-256: cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112
+Archive: https://arxiv.org/src/2609.28999v2
+Archive SHA-256: 663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2
+Line numbers below are original 1-based TeX source line numbers.
+The original authors retain rights in the quoted material.
+--- BEGIN LINE-NUMBERED EXCERPT ---
+653: L
+654: &:=\sqrt{d}
+655: \max_{1\leq i\leq d}
+656: \sup_{\mathbf{x}\in\Omega}
+657: \left\lVert\nabla F_i(\mathbf{x})\right\rVert_2,\\
+658: H
+659: &:=\sqrt{d}
+660: \max_{1\leq i\leq d}
+661: \sup_{\mathbf{x}\in\Omega}
+662: \left\lVert D^2 F_i(\mathbf{x})\right\rVert_F,
+663: \notag\\
+664: \sigma_F^2(t)
+665: &:=
+666: \frac{
+667: \left\lVert\boldsymbol{\Sigma}(t)\right\rVert_F
+668: }{
+669: \sqrt{d}
+670: }.
+671: \label{Eq: Frob sigma}
+672: \end{align}
+673: %
+674: This normalization ensures that $\sigma_F=\sigma$ for an isotropic covariance matrix $\boldsymbol{\Sigma}=\sigma^2I_d$.
+[noncontiguous source ranges; intervening text omitted]
+690: The calculation naturally identifies the dimensionless parameter
+691: \begin{equation}
+692: R:=
+693: \frac{
+694: \sqrt{d}\,\sigma_F(t_0) H
+695: }{
+696: 2L
+697: }
+698: ,
+699: \label{Eq: Local Ehrenfest Reynolds}
+700: \end{equation}
+[noncontiguous source ranges; intervening text omitted]
+1030: For the Lotka--Volterra system, the Ehrenfest Reynolds number scales with the initial covariance width as
+1031: \begin{equation}
+1032:     \frac{R}{\sigma}
+1033:     =
+1034:     \frac{\gamma}{\beta}
+1035:     =
+1036:     2.29.
+1037: \end{equation}

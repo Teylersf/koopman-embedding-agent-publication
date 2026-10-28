@@ -1,0 +1,54 @@
+Attributed source excerpt: Fredon, Ram, Debbasch, Zylberman and Loureiro (2026)
+Work: arXiv:2609.28999v2
+Locator: PDF pp. 14-15, Eqs. (D8)-(D10) and subsequent precision/phase-shift claim
+Original filename: Limit.tex
+Original file SHA-256: cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112
+Archive: https://arxiv.org/src/2609.28999v2
+Archive SHA-256: 663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2
+Line numbers below are original 1-based TeX source line numbers.
+The original authors retain rights in the quoted material.
+--- BEGIN LINE-NUMBERED EXCERPT ---
+1568: \begin{align}
+1569: \mathbb{P}_0
+1570: &=\frac{1}{2}+\frac{1}{2}
+1571: \cos\!\left(
+1572: 2(\langle\theta\rangle_\rho-\theta_m)
+1573: \right)
+1574: \left(
+1575: 1-2\,\operatorname{Var}_\rho(\theta)
+1576: \right)
+1577: +
+1578: O\!\left(
+1579: \langle
+1580: |\theta-\langle\theta\rangle_\rho|^3
+1581: \rangle_\rho
+1582: \right),\label{ApEq: Probability of quantum counting}\\
+1583: &\simeq \cos^2(\langle\theta\rangle_\rho-\theta_m)-\cos\!\left(
+1584: 2(\langle\theta\rangle_\rho-\theta_m)
+1585: \right)\,\operatorname{Var}_\rho(\theta)
+1586: \end{align}
+1587: where
+1588: 
+1589: \[
+1590: \operatorname{Var}_\rho(\theta)
+1591: =
+1592: \left\langle
+1593: (\theta-\langle\theta\rangle_\rho)^2
+1594: \right\rangle_\rho.
+1595: \]
+1596: 
+1597: Assuming that $\theta$ is twice continuously differentiable and that $\rho$ remains sufficiently localized, the variance admits the approximation
+1598: 
+1599: \begin{equation}
+1600: \operatorname{Var}_\rho(\theta)
+1601: =
+1602: \nabla\theta(\langle\mathbf{x}\rangle_\rho)^\top
+1603: \mathbf{\Sigma}
+1604: \nabla\theta(\langle\mathbf{x}\rangle_\rho)
+1605: +
+1606: O(\|\mathbf{\Sigma}\|^2).
+1607: \end{equation}
+[noncontiguous source ranges; intervening text omitted]
+1614: However the precision $\epsilon$ at which we estimate $\langle\theta\rangle_\rho$ is at best $\operatorname{Var}_\rho(\theta)=O(\|\mathbf{\Sigma}\|\,\|D^2\theta\|)$ .
+1615: %
+1616: We can see the latter in Eq.\ \ref{ApEq: Probability of quantum counting} by introducing $\cos2\theta_{err}=(1-2\operatorname{Var}_\rho(\theta))$ upon the small angle assumption $(\langle\theta\rangle_\rho-\theta_m)\ll1$ which yields to $\mathbb{P}_0\sim\cos^2(\langle f\rangle_\rho-m\epsilon+\theta_{err})$.

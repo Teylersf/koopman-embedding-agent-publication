@@ -1,0 +1,161 @@
+{
+  "canonical_author": "Taylor Kalin",
+  "pages": 18,
+  "code_pin": {
+    "code_commit": "1f006c4d0acae13b2ccee9e485cb31288c2cdc0d",
+    "script_sha256": "46ad81502f628e4203a64d08ef56d6b9d80c1f4b8fcffd58f92ffc182b91df21",
+    "results_sha256": "f4b9923ee391811ce4f1826f46ea126ad13ef7a4806b8c9d11a166c40be4ae7c"
+  },
+  "artifacts": [
+    {
+      "path": "paper/main.pdf",
+      "bytes": 209416,
+      "sha256": "e54f0d0ada730b45bbcd987c94523b1c9a987fb96a12f758ecea2f37dd6679b3"
+    },
+    {
+      "path": "paper/main.tex",
+      "bytes": 13492,
+      "sha256": "d872370112d84ed15e55d181681c5ed2589746fb02abd60d8903bbfc5d33bb3b"
+    },
+    {
+      "path": "paper/references.bib",
+      "bytes": 3760,
+      "sha256": "53649cd3648444d0c9ad6c06efb06afc0316e86ad44bfd1fd367bae08d4289f4"
+    },
+    {
+      "path": "experiments/verify.py",
+      "bytes": 20887,
+      "sha256": "46ad81502f628e4203a64d08ef56d6b9d80c1f4b8fcffd58f92ffc182b91df21"
+    },
+    {
+      "path": "experiments/make_figures.py",
+      "bytes": 5286,
+      "sha256": "280657bf89f5d79dad79d536ec7f3c59f997b8e06cf1ad626d6237203c5435f4"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 23608,
+      "sha256": "f4b9923ee391811ce4f1826f46ea126ad13ef7a4806b8c9d11a166c40be4ae7c"
+    },
+    {
+      "path": "results/execution.log",
+      "bytes": 24400,
+      "sha256": "1da4c427377256d2fabda268f5bb4193337cdbdf0eb72a15fd16e5e6672b11ab"
+    },
+    {
+      "path": "submissions/manuscript.md",
+      "bytes": 57886,
+      "sha256": "df98134c80d7671c7204f01196d5704927106840ecdff18536af8ff72c82b15f"
+    },
+    {
+      "path": "submissions/metadata.json",
+      "bytes": 2296,
+      "sha256": "900904e1d8a786b0790d7df6fd22cd3b22dc0d2257956d8e067ed7603ba47a7c"
+    },
+    {
+      "path": "paper/sections/benchmarks.tex",
+      "bytes": 2492,
+      "sha256": "8b2cb0444708ad460e2854c35fc0573225eb5552cdbc996667d9c06e35fec9bf"
+    },
+    {
+      "path": "paper/sections/consequences.tex",
+      "bytes": 3588,
+      "sha256": "b1ca27944a67bc980f533850580910d62f4f5b323c325ac172186301ba0643eb"
+    },
+    {
+      "path": "paper/sections/covariance.tex",
+      "bytes": 3122,
+      "sha256": "ac9fb894a7f9011498754958a37ccbb2cd3eeca41abe1e51bca2a3bf130dd103"
+    },
+    {
+      "path": "paper/sections/execution.tex",
+      "bytes": 1972,
+      "sha256": "36cf0a5824cee166b818b1c698437f4e9f4e4709de3c89eb1cd11e5b3145cacc"
+    },
+    {
+      "path": "paper/sections/geometry.tex",
+      "bytes": 10121,
+      "sha256": "375f425d5898a498f04b36a9efb9b03fd62e8d0d5fdb52213c95a5afbc42fc04"
+    },
+    {
+      "path": "paper/sections/readout.tex",
+      "bytes": 11667,
+      "sha256": "bc4ae52fefea7e9a26438a2770eb08d496d012f83fbf0af6804b4cea72831eff"
+    },
+    {
+      "path": "paper/sections/regularity.tex",
+      "bytes": 3829,
+      "sha256": "487b94a260747f33d60ed15c314a93efd2aba589adf80430df8bfe6893947e95"
+    },
+    {
+      "path": "paper/sections/source-evidence.tex",
+      "bytes": 7269,
+      "sha256": "2a5e06bdea504f99765419512c0032faafe2fa90e75422fce1a7ed1bba248029"
+    },
+    {
+      "path": "figures/geometry-criterion.pdf",
+      "bytes": 24057,
+      "sha256": "155fa5509e64da0b29a542d9ac299f86545e97be376c0b78df056da4ed4ac1dd"
+    },
+    {
+      "path": "figures/geometry-criterion.png",
+      "bytes": 64675,
+      "sha256": "b9b18c27f4cbc629c33bcdd3c824570285232445b4187d05c9fd9a79ea3cabf0"
+    },
+    {
+      "path": "figures/phase-inference.pdf",
+      "bytes": 26843,
+      "sha256": "8768ca17cb1cd7d9ff490d984f2173b82045c101f60e04ffafb9d90988995d70"
+    },
+    {
+      "path": "figures/phase-inference.png",
+      "bytes": 143765,
+      "sha256": "9763378fd65c096e780fb5d8070efd4c3362a924ff5f2572bb7d72e95e8793bc"
+    },
+    {
+      "path": "source-excerpts/appendix-c-coordinate.txt",
+      "bytes": 1294,
+      "sha256": "625999e91be3dc5a4560371cb1cef7346b4069ef86e66b9523d9f5ccfa0eacd2"
+    },
+    {
+      "path": "source-excerpts/disclosed-closures.txt",
+      "bytes": 2116,
+      "sha256": "2232347fb16f6ed9f116398a362b6b061fb1432dc1b5274b0bef732262e85d00"
+    },
+    {
+      "path": "source-excerpts/geometric-eq30-31.txt",
+      "bytes": 1478,
+      "sha256": "fc867ffa78892ce74a38fe7dd989ec49305a9d8e0b7c33f8aa8f4b638edd013c"
+    },
+    {
+      "path": "source-excerpts/grover-eqD8-D10.txt",
+      "bytes": 2296,
+      "sha256": "71697a387ee2eb6b7cac06081f13d9eb002590d5c92cd110b837bc1d6057498d"
+    },
+    {
+      "path": "source-excerpts/manifest.json",
+      "bytes": 3882,
+      "sha256": "87ddb6683038496b70a43b2276a2aaec21acc7e97652311a6bfb1a40ca912045"
+    },
+    {
+      "path": "source-excerpts/observable-eq35-sampling.txt",
+      "bytes": 1512,
+      "sha256": "ae4a9bf49cf4d730f8290bcd9976fddf50abb4430fbf9c69c7282ff562bee80b"
+    },
+    {
+      "path": "source-excerpts/README.md",
+      "bytes": 3799,
+      "sha256": "e3c7b7bdd7e076c10f9d04fada5f278e14c62102702d7fc2e05cec9ebd202849"
+    },
+    {
+      "path": "source-excerpts/reynolds-definitions-eq45.txt",
+      "bytes": 1777,
+      "sha256": "40249bf814ad27c09e7cee53c535e52b77384931ac7cb21ec9ca35893b0931a0"
+    },
+    {
+      "path": "source-excerpts/verify.py",
+      "bytes": 2546,
+      "sha256": "ff24400f4e97a76e5fda80f004120f71cfc91807f6fac4c8ca3e64af865e0399"
+    }
+  ]
+}

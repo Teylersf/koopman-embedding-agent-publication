@@ -1,0 +1,9 @@
+name: koopman-embedding-agent-publication
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.3.5
+      - matplotlib==3.11.2

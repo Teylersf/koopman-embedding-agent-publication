@@ -1,0 +1,29 @@
+Attributed source excerpt: Fredon, Ram, Debbasch, Zylberman and Loureiro (2026)
+Work: arXiv:2609.28999v2
+Locator: PDF p. 6, Eq. (35), its regularity assumptions and following sampling claim
+Original filename: Limit.tex
+Original file SHA-256: cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112
+Archive: https://arxiv.org/src/2609.28999v2
+Archive SHA-256: 663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2
+Line numbers below are original 1-based TeX source line numbers.
+The original authors retain rights in the quoted material.
+--- BEGIN LINE-NUMBERED EXCERPT ---
+888: Furthermore, assuming that $\rho$ is a multivariate Gaussian distribution with mean $\langle\mathbf{x}\rangle$ and covariance matrix $\mathbf{\Sigma}$, and that $f$ is twice continuously differentiable in a neighborhood of $\langle\mathbf{x}\rangle$, Eq.\ \ref{Eq: P0 eps2} second-order approximation is
+889: 
+890: \begin{equation}
+891: \int_\Omega f(\mathbf{x})\,\rho(\mathbf{x},t)\, d^d\mathbf{x}
+892: =
+893: f(\langle\mathbf{x}\rangle)
+894: +
+895: \frac{1}{2}
+896: \operatorname{Tr}
+897: \left(
+898: \mathbf{\Sigma}
+899: (D^2f)(\langle\mathbf{x}\rangle)
+900: \right)
+901: +
+902: O(\|\mathbf{\Sigma}\|^2).
+903: \label{Eq: measurement formula}
+904: \end{equation}
+[noncontiguous source ranges; intervening text omitted]
+912: With this approach, estimating $\mathbb{P}_0$ with precision $\epsilon$ requires a number of measurement $M=O\left(\frac{\Sigma}{\epsilon^2}\right)$ as detailed in App.~\ref{App.: Bayes}.

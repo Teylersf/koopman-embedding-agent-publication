@@ -1,0 +1,172 @@
+{
+  "canonical_manuscript_sha256": "df98134c80d7671c7204f01196d5704927106840ecdff18536af8ff72c82b15f",
+  "agent_paper_sha256": "d4eed4b5a56f25dc3bea99801431e608fc3bad53acbcf92cb324eb7ab9e38e7e",
+  "canonical_math_segments": 362,
+  "agent_math_segments": 362,
+  "all_math_segments_identical_and_in_same_order": true,
+  "canonical_proof_headings": 8,
+  "agent_proof_headings": 8,
+  "body_word_count_regex": 8572,
+  "body_word_count_whitespace": 6767,
+  "paper_type": "research_article",
+  "reference_count": 9,
+  "reference_numbering_matches_compiled_aux": true,
+  "section_order": [
+    "Introduction",
+    "Related Work",
+    "Methodology",
+    "Results",
+    "Discussion",
+    "Limitations",
+    "Conclusion",
+    "Appendix"
+  ],
+  "no_owner_email_or_phone_in_agent_payload": true,
+  "canonical_result_sections_preserved": [
+    "3. Initial separation and the geometric criterion",
+    "4. Phase fringes, arithmetic means, and sampling",
+    "5. Calibration of the Lotka–Volterra example",
+    "6. Regularity required by the Gaussian remainder",
+    "7. Consequences for numerical and measurement choices",
+    "8. Reproducible experiments"
+  ],
+  "owner_is_not_agent_schema_coauthor": true,
+  "token_usage_sentinel_is_not_measurement": true,
+  "no_source_or_canonical_paper_pdf_copied": true,
+  "canonical_release": "https://github.com/Teylersf/koopman-embedding-corrections/releases/tag/v1.1.0",
+  "publication_context": {
+    "prepared_at_utc": "2026-10-28T21:57:47.154543+00:00",
+    "publishfun_internal_id": "p_5gL1NwHZWxPNHnyW",
+    "canonical_work_version": "1.1.0",
+    "publishfun_state": "revision_requested",
+    "publishfun_public_id": null,
+    "airaxiv_submission_id": "1262",
+    "airaxiv_public_id": "2610.0108",
+    "agent_venue_submission_allowed_by_review_sequence": false,
+    "agentpub_paper_created": false,
+    "aaes_registry_paper_created": false
+  },
+  "copied_verbatim": [
+    {
+      "path": "experiments/make_figures.py",
+      "bytes": 5286,
+      "sha256": "280657bf89f5d79dad79d536ec7f3c59f997b8e06cf1ad626d6237203c5435f4"
+    },
+    {
+      "path": "experiments/README.md",
+      "bytes": 3079,
+      "sha256": "ea049be0696f6fa6f38bca0adfe3181eaa83ba987d2b660d39611d3079af43fa"
+    },
+    {
+      "path": "experiments/verify.py",
+      "bytes": 20887,
+      "sha256": "46ad81502f628e4203a64d08ef56d6b9d80c1f4b8fcffd58f92ffc182b91df21"
+    },
+    {
+      "path": "figures/geometry-criterion.pdf",
+      "bytes": 24057,
+      "sha256": "155fa5509e64da0b29a542d9ac299f86545e97be376c0b78df056da4ed4ac1dd"
+    },
+    {
+      "path": "figures/geometry-criterion.png",
+      "bytes": 64675,
+      "sha256": "b9b18c27f4cbc629c33bcdd3c824570285232445b4187d05c9fd9a79ea3cabf0"
+    },
+    {
+      "path": "figures/phase-inference.pdf",
+      "bytes": 26843,
+      "sha256": "8768ca17cb1cd7d9ff490d984f2173b82045c101f60e04ffafb9d90988995d70"
+    },
+    {
+      "path": "figures/phase-inference.png",
+      "bytes": 143765,
+      "sha256": "9763378fd65c096e780fb5d8070efd4c3362a924ff5f2572bb7d72e95e8793bc"
+    },
+    {
+      "path": "results/artifact-manifest.json",
+      "bytes": 5422,
+      "sha256": "a874301f6366145d8afd8b3db085548561ab4536fe7897003a7a13cf36489b8d"
+    },
+    {
+      "path": "results/code-pin.json",
+      "bytes": 244,
+      "sha256": "70a20067a6f99b4b50a47aa5aacac4b4cbb292c14b473a4f862f4a90bc1104db"
+    },
+    {
+      "path": "results/execution.log",
+      "bytes": 24400,
+      "sha256": "1da4c427377256d2fabda268f5bb4193337cdbdf0eb72a15fd16e5e6672b11ab"
+    },
+    {
+      "path": "results/figure-manifest.json",
+      "bytes": 928,
+      "sha256": "70cfc5943c1c3324653c4f77fb5dfec3f97b90331088036fdc913d7df171c268"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 23608,
+      "sha256": "f4b9923ee391811ce4f1826f46ea126ad13ef7a4806b8c9d11a166c40be4ae7c"
+    },
+    {
+      "path": "source-excerpts/appendix-c-coordinate.txt",
+      "bytes": 1294,
+      "sha256": "625999e91be3dc5a4560371cb1cef7346b4069ef86e66b9523d9f5ccfa0eacd2"
+    },
+    {
+      "path": "source-excerpts/disclosed-closures.txt",
+      "bytes": 2116,
+      "sha256": "2232347fb16f6ed9f116398a362b6b061fb1432dc1b5274b0bef732262e85d00"
+    },
+    {
+      "path": "source-excerpts/geometric-eq30-31.txt",
+      "bytes": 1478,
+      "sha256": "fc867ffa78892ce74a38fe7dd989ec49305a9d8e0b7c33f8aa8f4b638edd013c"
+    },
+    {
+      "path": "source-excerpts/grover-eqD8-D10.txt",
+      "bytes": 2296,
+      "sha256": "71697a387ee2eb6b7cac06081f13d9eb002590d5c92cd110b837bc1d6057498d"
+    },
+    {
+      "path": "source-excerpts/manifest.json",
+      "bytes": 3882,
+      "sha256": "87ddb6683038496b70a43b2276a2aaec21acc7e97652311a6bfb1a40ca912045"
+    },
+    {
+      "path": "source-excerpts/observable-eq35-sampling.txt",
+      "bytes": 1512,
+      "sha256": "ae4a9bf49cf4d730f8290bcd9976fddf50abb4430fbf9c69c7282ff562bee80b"
+    },
+    {
+      "path": "source-excerpts/README.md",
+      "bytes": 3799,
+      "sha256": "e3c7b7bdd7e076c10f9d04fada5f278e14c62102702d7fc2e05cec9ebd202849"
+    },
+    {
+      "path": "source-excerpts/reynolds-definitions-eq45.txt",
+      "bytes": 1777,
+      "sha256": "40249bf814ad27c09e7cee53c535e52b77384931ac7cb21ec9ca35893b0931a0"
+    },
+    {
+      "path": "source-excerpts/verify.py",
+      "bytes": 2546,
+      "sha256": "ff24400f4e97a76e5fda80f004120f71cfc91807f6fac4c8ca3e64af865e0399"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 32,
+      "sha256": "adc7fa5a4dbaa7335c32c1e7d10cffae5c96f67ba2f5f22c8453c1bc11cf8e0a"
+    },
+    {
+      "path": "SOURCE.md",
+      "bytes": 9192,
+      "sha256": "4cd16490cd194f980a03d853b5a0c49da0ef7bb1751c94d61e53d6be97763ae3"
+    },
+    {
+      "path": "audit/ledger.md",
+      "bytes": 8324,
+      "sha256": "55fae2e2198348a0d07e512f99db997f8efbd827de78be8c0f510d77a8ba7256"
+    }
+  ],
+  "all_adapter_assertions_passed": true
+}

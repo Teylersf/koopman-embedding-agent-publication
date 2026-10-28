@@ -1,0 +1,19 @@
+Attributed source excerpt: Fredon, Ram, Debbasch, Zylberman and Loureiro (2026)
+Work: arXiv:2609.28999v2
+Locator: PDF p. 13, Eq. (C1) and its definition
+Original filename: Limit.tex
+Original file SHA-256: cd636885026f6567d9cfa922ac4d3f77f6f9bf25d6f5cf482ed775b282174112
+Archive: https://arxiv.org/src/2609.28999v2
+Archive SHA-256: 663a2a2296ad605607c47baa1854fafd76124593cb4f92bf8e209e76da6516e2
+Line numbers below are original 1-based TeX source line numbers.
+The original authors retain rights in the quoted material.
+--- BEGIN LINE-NUMBERED EXCERPT ---
+1376: To quantify the picture, let us introduce the quantity:
+1377: \begin{equation}
+1378:     \Delta_\sigma x_i:= \max_{\boldsymbol\xi\in \mathcal{B}^d} |x_i(\textbf{x}+\sigma\boldsymbol{\xi},\Delta_t)-x_i(\textbf{x},\Delta_t)|\,,
+1379: \end{equation}
+1380: where $x_i(\textbf{x},t)$ is the value of $x_i$ after a translation along the $x_i$ axis of time $t$ starting from the initial position $\textbf{x}$ and $\mathcal{B}^d$ is the $d$-dimensional unit sphere for the 2-norm.
+1381: %
+1382: Empirically, $\Delta_\sigma x_i$ is a measure the maximum shear of a multivariate Gaussian after a Trotter step along axis $i$.
+1383: %
+1384: Geometrically, $\Delta_\sigma x_i$ measure the maximal red arrow on Fig.\ \ref{Fig: Gaussian shear}.b.

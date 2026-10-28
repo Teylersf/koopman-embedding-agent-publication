@@ -1,0 +1,27 @@
+{
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.3.5",
+  "scope": "Exact finite-grid Gaussian characteristic moments and a sampled shear-boundary maximum. Candidate displacement statistic is not asserted to be a global stability theorem.",
+  "figures": [
+    {
+      "path": "figures/geometry-criterion.pdf",
+      "bytes": 24057,
+      "sha256": "155fa5509e64da0b29a542d9ac299f86545e97be376c0b78df056da4ed4ac1dd"
+    },
+    {
+      "path": "figures/geometry-criterion.png",
+      "bytes": 64675,
+      "sha256": "b9b18c27f4cbc629c33bcdd3c824570285232445b4187d05c9fd9a79ea3cabf0"
+    },
+    {
+      "path": "figures/phase-inference.pdf",
+      "bytes": 26843,
+      "sha256": "8768ca17cb1cd7d9ff490d984f2173b82045c101f60e04ffafb9d90988995d70"
+    },
+    {
+      "path": "figures/phase-inference.png",
+      "bytes": 143765,
+      "sha256": "9763378fd65c096e780fb5d8070efd4c3362a924ff5f2572bb7d72e95e8793bc"
+    }
+  ]
+}
