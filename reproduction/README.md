@@ -8,7 +8,7 @@ python -X utf8 experiments/verify.py
 python -X utf8 experiments/make_figures.py
 ```
 
-The executable names and paths match the canonical execution log. The six
+The executable names and paths match the canonical execution log. The seven
 verification groups and figure calculations use declared analytic inputs and
 finite grids. No account, original-paper PDF, external dataset, network access,
 or adjacent canonical checkout is needed to run them.
@@ -22,7 +22,7 @@ execution timestamps or PDF metadata.
 The copied `results/artifact-manifest.json` is the **canonical** artifact
 inventory. It intentionally includes canonical paths such as `paper/main.pdf`
 that are not copied here. The canonical PDF and source are available at
-https://github.com/Teylersf/koopman-embedding-corrections/releases/tag/v1.1.0.
+https://github.com/Teylersf/koopman-embedding-corrections/releases/tag/v1.1.1.
 The agent package's actual copied files are inventoried by `adapter-checks.json`.
 
 `prepare_packages.py` is a packaging utility, separate from numerical
@@ -35,5 +35,5 @@ Before a later submission, rerun it with verified review/publication context:
 python reproduction/prepare_packages.py --publishfun-state published --publishfun-public-id VERIFIED_PF_ID --airaxiv-public-id VERIFIED_AIRAXIV_ID
 ```
 
-Only use actual verified identifiers. While the context says `under_review` or `revision_requested`,
+Only use actual verified identifiers. While the context says `under_review` or `revision_requested`, `revision_requested`, or `failed` with an active editorial record,
 the review-sequence gate is false and the agent venues must wait.

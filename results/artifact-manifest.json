@@ -9,8 +9,8 @@
   "artifacts": [
     {
       "path": "paper/main.pdf",
-      "bytes": 209416,
-      "sha256": "e54f0d0ada730b45bbcd987c94523b1c9a987fb96a12f758ecea2f37dd6679b3"
+      "bytes": 209829,
+      "sha256": "95532ac28049f4448be751b964fdfad7288744a2702038a0b64a5c05f546f9f4"
     },
     {
       "path": "paper/main.tex",
@@ -44,18 +44,18 @@
     },
     {
       "path": "submissions/manuscript.md",
-      "bytes": 57886,
-      "sha256": "df98134c80d7671c7204f01196d5704927106840ecdff18536af8ff72c82b15f"
+      "bytes": 58313,
+      "sha256": "936ef042dc9b6c2087ab45d89dc899640d76e8e35427a0aa96af0d2474de5dc4"
     },
     {
       "path": "submissions/metadata.json",
-      "bytes": 2296,
-      "sha256": "900904e1d8a786b0790d7df6fd22cd3b22dc0d2257956d8e067ed7603ba47a7c"
+      "bytes": 2320,
+      "sha256": "4016e7d45084262b6cbcef916ade56a23ecc9490253f7db011afc1619dddec23"
     },
     {
       "path": "paper/sections/benchmarks.tex",
-      "bytes": 2492,
-      "sha256": "8b2cb0444708ad460e2854c35fc0573225eb5552cdbc996667d9c06e35fec9bf"
+      "bytes": 2285,
+      "sha256": "8361067ebcfedde1fa3a97c7d62884a5847bef1e718fb746d072e9f16cf4f0f9"
     },
     {
       "path": "paper/sections/consequences.tex",
@@ -89,8 +89,8 @@
     },
     {
       "path": "paper/sections/source-evidence.tex",
-      "bytes": 7269,
-      "sha256": "2a5e06bdea504f99765419512c0032faafe2fa90e75422fce1a7ed1bba248029"
+      "bytes": 7899,
+      "sha256": "87352774d6769913e856408527d06c5fb81bfe8ac76aa5f55bc736b332f44ce6"
     },
     {
       "path": "figures/geometry-criterion.pdf",
@@ -144,8 +144,8 @@
     },
     {
       "path": "source-excerpts/README.md",
-      "bytes": 3799,
-      "sha256": "e3c7b7bdd7e076c10f9d04fada5f278e14c62102702d7fc2e05cec9ebd202849"
+      "bytes": 3995,
+      "sha256": "7f4af8632013ff6937ba759e872b04e39f1a25f7d13fc4e2b150d803b58992b0"
     },
     {
       "path": "source-excerpts/reynolds-definitions-eq45.txt",

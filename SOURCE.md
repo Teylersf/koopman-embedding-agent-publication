@@ -23,12 +23,26 @@ correction. That search does not establish that none exists. No claim is made
 about an unexamined manuscript, future revision, or version of record.
 
 No source author has been contacted, and no author confirmation is claimed.
-A reviewer reported a 29 September date on
-[Matilda](https://matilda.science/work/e0280fa0-9dbb-4f04-8567-6b3b05efadff).
-An ordinary public request to that page returned only a JavaScript application
-shell. We could not independently establish the reported date or the meaning of
-its field. The date used here comes from the versioned primary arXiv record;
-we do not infer an indexing or publication event from the aggregator date.
+The rendered
+[Matilda work page](https://matilda.science/work/e0280fa0-9dbb-4f04-8567-6b3b05efadff?l=en),
+checked on 28 October 2026, displays `Created date: 2026/09/25` and
+`Matilda last update: 2026/10/01`. Its one associated arXiv entry
+(`arxiv-arxiv_oai:arXiv.org:2609.28999`) displays:
+
+- `Created date: 2026/09/25`
+- `Publication date: 2026/09/29`
+- `Source last update: 2026/09/29`
+- `Matilda last update: 2026/09/30`
+
+That entry links to the unversioned arXiv abstract and PDF, not a separately
+identified revised manuscript. Matilda's
+[metadata explanation](https://matilda.science/faq#i206) says version metadata
+are displayed when available from the original data source; the inspected
+explanation does not specify how these date fields map to arXiv revision
+history. A fresh check of the official arXiv record still listed v2 revised
+25 September 2026, 21:21:38 UTC, with no later revision or journal reference.
+The v2 PDF stamp also states 25 September. We do not infer a distinct scientific
+revision, announcement date, or harvesting event from the aggregator fields.
 
 ## Independent TeX provenance
 

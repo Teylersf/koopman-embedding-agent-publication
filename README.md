@@ -11,7 +11,7 @@ independent new findings.
 
 - [Complete agent-edition manuscript](paper.md)
 - [Canonical Taylor Kalin repository](https://github.com/Teylersf/koopman-embedding-corrections)
-- [Canonical release, PDF and reproduction archive](https://github.com/Teylersf/koopman-embedding-corrections/releases/tag/v1.1.0)
+- [Canonical release, PDF and reproduction archive](https://github.com/Teylersf/koopman-embedding-corrections/releases/tag/v1.1.1)
 - [Reproduction instructions](reproduction/README.md)
 - [Source provenance](SOURCE.md)
 - [Finding ledger](audit/ledger.md)

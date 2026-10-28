@@ -16,7 +16,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT.parent / 'koopman-embedding-corrections'
 REPOSITORY_URL = 'https://github.com/Teylersf/koopman-embedding-corrections'
-TARGET_VERSION = '1.1.0'
+TARGET_VERSION = '1.1.1'
 RELEASE_URL = REPOSITORY_URL + '/releases/tag/v' + TARGET_VERSION
 AGENT_REPOSITORY_URL = 'https://github.com/Teylersf/koopman-embedding-agent-publication'
 GIST_ID = 'gist:7c74312cf47dcc31c789a8b1c3dedd25'
@@ -94,9 +94,10 @@ def references() -> list[dict]:
 def main() -> None:
     global RELEASE_URL
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--publishfun-state', choices=['under_review', 'revision_requested', 'accepted', 'published', 'rejected', 'withdrawn'], default='revision_requested')
+    parser.add_argument('--publishfun-state', choices=['under_review', 'revision_requested', 'failed', 'accepted', 'published', 'rejected', 'withdrawn'], default='failed')
     parser.add_argument('--publishfun-public-id')
     parser.add_argument('--airaxiv-public-id', default='2610.0108')
+    parser.add_argument('--airaxiv-submission-id', default='1265', help='Actual latest AiraXiv submission/update identifier; does not establish moderation approval or a public version number.')
     args = parser.parse_args()
     metadata = json.loads((CANONICAL / 'submissions/metadata.json').read_text(encoding='utf-8'))
     version = metadata.get('version', '').lstrip('v')
@@ -126,6 +127,7 @@ def main() -> None:
     pf_url = ('https://publish.fun/papers/' + args.publishfun_public_id if args.publishfun_public_id else
               'https://publish.fun/dashboard/papers/p_5gL1NwHZWxPNHnyW')
     pf_status = {'under_review': 'is under review', 'revision_requested': 'has received a major-revision request; its review remains open',
+                 'failed': 'has a review-pipeline failure without an editorial decision; its editorial record remains active',
                  'accepted': 'has been accepted; publication is not asserted without a public record',
                  'published': 'is published', 'rejected': 'has received a rejection decision',
                  'withdrawn': 'has been withdrawn'}[args.publishfun_state]
@@ -133,7 +135,7 @@ def main() -> None:
         parser.error('A verified --publishfun-public-id is required for a published status.')
     airaxiv = ('The preprint is published as AiraXiv ' + args.airaxiv_public_id +
                ' at https://airaxiv.com/papers/view/' + args.airaxiv_public_id + '/.' if args.airaxiv_public_id else
-               'AiraXiv submission 1262 is pending moderation; no public AiraXiv identifier is asserted.')
+               'AiraXiv submission ' + args.airaxiv_submission_id + ' is pending moderation; no public AiraXiv identifier is asserted.')
     dissemination = (
         'This is the agent-only edition of one correction study whose canonical human author is Taylor Kalin. '
         'The canonical repository is ' + REPOSITORY_URL + ' and its release is ' + RELEASE_URL + '. '
@@ -280,7 +282,7 @@ def main() -> None:
             shutil.copyfile(src, dst)
             assert src.read_bytes() == dst.read_bytes()
             copied.append({'path': relative.as_posix(), 'bytes': src.stat().st_size, 'sha256': digest(src.read_bytes())})
-    for relative in (Path('requirements.txt'), Path('SOURCE.md'), Path('audit/ledger.md')):
+    for relative in (Path('requirements.txt'), Path('SOURCE.md'), Path('audit/ledger.md'), Path('audit/prior-art.md')):
         src, dst = CANONICAL / relative, ROOT / relative
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(src, dst)
@@ -288,7 +290,7 @@ def main() -> None:
     context = {'prepared_at_utc': prepared_at, 'publishfun_internal_id': 'p_5gL1NwHZWxPNHnyW',
                'canonical_work_version': version,
                'publishfun_state': args.publishfun_state, 'publishfun_public_id': args.publishfun_public_id,
-               'airaxiv_submission_id': '1262', 'airaxiv_public_id': args.airaxiv_public_id,
+               'airaxiv_submission_id': args.airaxiv_submission_id, 'airaxiv_public_id': args.airaxiv_public_id,
                'agent_venue_submission_allowed_by_review_sequence': pf_closed,
                'agentpub_paper_created': False, 'aaes_registry_paper_created': False}
     write_json(ROOT / 'reproduction/publication-context.json', context)

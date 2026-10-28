@@ -48,10 +48,12 @@ it is not evidence by itself of a mathematical change.
 
 The official [arXiv history](https://arxiv.org/abs/2609.28999v2) records v1 on
 24 September 2026 and v2 on 25 September 2026, 21:21:38 UTC. The v2 PDF stamp
-also says 25 September. A reviewer reported 29 September on
-[Matilda](https://matilda.science/work/e0280fa0-9dbb-4f04-8567-6b3b05efadff).
-Our public request to that page returned only a JavaScript application shell;
-the reported date and its meaning could not be independently established.
-The manuscript uses the versioned primary-record date and does not interpret
-the aggregator's field. No source author has been contacted and no author
-confirmation is claimed.
+also says 25 September. The rendered
+[Matilda record](https://matilda.science/work/e0280fa0-9dbb-4f04-8567-6b3b05efadff?l=en)
+labels 29 September as both Publication date and Source last update for its
+associated arXiv entry. It links to the unversioned arXiv record and does not
+identify a separate revised manuscript. The inspected metadata explanation
+does not define the mapping to arXiv revision dates. The manuscript uses the
+versioned primary-record date; no distinct scientific revision is inferred from
+the aggregator fields. [SOURCE.md](../SOURCE.md) records the exact labels.
+No source author has been contacted and no author confirmation is claimed.
