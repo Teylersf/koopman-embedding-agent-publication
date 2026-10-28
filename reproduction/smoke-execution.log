@@ -1,21 +1,22 @@
 AUTHOR-ENVIRONMENT EXECUTION RECORD
 Deterministic classical checks, not independent human peer review or third-party certification.
 Command: python -X utf8 experiments/verify.py
-Started UTC: 2026-10-28T21:41:40.189700+00:00
+Started UTC: 2026-10-28T22:00:36.950710+00:00
 Python: 3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
 Platform: win32
 NumPy: 2.3.5
-Script SHA-256: d31f8924db3cfd234806f615e82357c0c8e89b191041363676e62502a0056add
+Script SHA-256: 46ad81502f628e4203a64d08ef56d6b9d80c1f4b8fcffd58f92ffc182b91df21
 PASS: geometric_criterion
 PASS: phase_and_sampling
 PASS: single_frequency_nonidentifiability
 PASS: LV_calibration
 PASS: C2_remainder
 PASS: covariance_and_width
+PASS: complete_flow_uniform_remainder
 All assertions passed: true
 Exit status: 0
-Verification JSON SHA-256: 17368c8586be78a587793e40914ed995f0c0f3cc0296b3b52e6fa5341e8286df
-Elapsed seconds: 0.017430
+Verification JSON SHA-256: f4b9923ee391811ce4f1826f46ea126ad13ef7a4806b8c9d11a166c40be4ae7c
+Elapsed seconds: 1.012475
 Complete results follow:
 {
   "source_version": "arXiv:2609.28999v2",
@@ -453,6 +454,209 @@ Complete results follow:
         "defined_sigma_F": 0.04
       },
       "scope": "Appendix transpose and dimension-constant errors are repairable. This linear matrix example does not refute the main bound using the larger Eq22 constant; no compact nonlinear simulation is asserted.",
+      "all_assertions_passed": true
+    },
+    "complete_flow_uniform_remainder": {
+      "field": "F(q,p)=(sin(2*pi*p),sin(2*pi*q))",
+      "Hamiltonian": "H=-cos(2*pi*p)/(2*pi)+cos(2*pi*q)/(2*pi)",
+      "center": [
+        0.31,
+        0.47
+      ],
+      "boundary_directions": 128,
+      "integration": "Vectorized classical RK4, 1024 and 2048 internal steps per complete-flow trajectory",
+      "global_constants": {
+        "M": 1.4142135623730951,
+        "J": 6.283185307179586,
+        "H_vector_bilinear_bound": 39.47841760435743,
+        "K": 95.30933120146847
+      },
+      "exact_identity": "R_h(x,delta)=int_0^h int_0^s [G(Phi_r(x+delta))-G(Phi_r(x))] dr ds, G=DF F",
+      "analytic_bound": "||R_h(x,delta)||/sigma <= (H_vector*M+J^2)*h^2*exp(J*h)/2 for ||delta||<=sigma",
+      "coupled_width_scope": "For sigma=kappa*h, curvature and complete-flow temporal terms are both O(h^2) after normalization and both must be retained.",
+      "rows": [
+        {
+          "h": 0.01,
+          "kappa": 0.5,
+          "sigma": 0.005,
+          "sampled_max_R_norm_over_sigma": 0.0010838889158151445,
+          "uniform_K_h2_expJh_over_2_bound": 0.005074496455205727,
+          "measured_over_uniform_bound": 0.21359536367460172,
+          "R_over_sigma_h_squared": 10.838889158151444,
+          "max_endpoint_difference_1024_vs_2048": 3.1031676915590912e-15,
+          "normalized_R_refinement_defect": 7.147801729532276e-13,
+          "complete_flow_center_Euler_defect": 0.0002881596361843284,
+          "sampled_component_increment_over_sigma": [
+            0.0621887117264075,
+            0.024364499935036754
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.06778038510739794,
+            0.02919140470171893
+          ]
+        },
+        {
+          "h": 0.01,
+          "kappa": 1.0,
+          "sigma": 0.01,
+          "sampled_max_R_norm_over_sigma": 0.00112136802125808,
+          "uniform_K_h2_expJh_over_2_bound": 0.005074496455205727,
+          "measured_over_uniform_bound": 0.22098114190378682,
+          "R_over_sigma_h_squared": 11.2136802125808,
+          "max_endpoint_difference_1024_vs_2048": 3.1411660718727826e-15,
+          "normalized_R_refinement_defect": 3.1879063867282186e-13,
+          "complete_flow_center_Euler_defect": 0.0002881596361843284,
+          "sampled_component_increment_over_sigma": [
+            0.06231464594832481,
+            0.025269384063281164
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.06876734554750687,
+            0.03017836514182786
+          ]
+        },
+        {
+          "h": 0.01,
+          "kappa": 2.0,
+          "sigma": 0.02,
+          "sampled_max_R_norm_over_sigma": 0.0011939639326924525,
+          "uniform_K_h2_expJh_over_2_bound": 0.005074496455205727,
+          "measured_over_uniform_bound": 0.23528717444813893,
+          "R_over_sigma_h_squared": 11.939639326924524,
+          "max_endpoint_difference_1024_vs_2048": 3.1411660718727826e-15,
+          "normalized_R_refinement_defect": 1.6093447701508693e-13,
+          "complete_flow_center_Euler_defect": 0.0002881596361843284,
+          "sampled_component_increment_over_sigma": [
+            0.06250480095673638,
+            0.027052938268651294
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.07074126642772474,
+            0.032152286022045735
+          ]
+        },
+        {
+          "h": 0.02,
+          "kappa": 0.5,
+          "sigma": 0.01,
+          "sampled_max_R_norm_over_sigma": 0.004441572166469998,
+          "uniform_K_h2_expJh_over_2_bound": 0.021614265003675723,
+          "measured_over_uniform_bound": 0.20549263024741596,
+          "R_over_sigma_h_squared": 11.103930416174995,
+          "max_endpoint_difference_1024_vs_2048": 3.3422138886441674e-15,
+          "normalized_R_refinement_defect": 3.12099075402874e-13,
+          "complete_flow_center_Euler_defect": 0.0011539417730262085,
+          "sampled_component_increment_over_sigma": [
+            0.12508250477213934,
+            0.05113493718542084
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.148999963188278,
+            0.07182200237691999
+          ]
+        },
+        {
+          "h": 0.02,
+          "kappa": 1.0,
+          "sigma": 0.02,
+          "sampled_max_R_norm_over_sigma": 0.004744956584023483,
+          "uniform_K_h2_expJh_over_2_bound": 0.021614265003675723,
+          "measured_over_uniform_bound": 0.21952893532195314,
+          "R_over_sigma_h_squared": 11.862391460058706,
+          "max_endpoint_difference_1024_vs_2048": 3.0967063759893227e-15,
+          "normalized_R_refinement_defect": 1.6093447701508693e-13,
+          "complete_flow_center_Euler_defect": 0.0011539417730262085,
+          "sampled_component_increment_over_sigma": [
+            0.12534797447143475,
+            0.05471470031919723
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.15294780494871374,
+            0.07576984413735574
+          ]
+        },
+        {
+          "h": 0.02,
+          "kappa": 2.0,
+          "sigma": 0.04,
+          "sampled_max_R_norm_over_sigma": 0.005309102219934936,
+          "uniform_K_h2_expJh_over_2_bound": 0.021614265003675723,
+          "measured_over_uniform_bound": 0.2456295515499634,
+          "R_over_sigma_h_squared": 13.27275554983734,
+          "max_endpoint_difference_1024_vs_2048": 4.152961333551827e-15,
+          "normalized_R_refinement_defect": 1.0995027176373272e-13,
+          "complete_flow_center_Euler_defect": 0.0011539417730262085,
+          "sampled_component_increment_over_sigma": [
+            0.12538168536813526,
+            0.061638487730898694
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.16084348846958524,
+            0.08366552765822723
+          ]
+        },
+        {
+          "h": 0.04,
+          "kappa": 0.5,
+          "sigma": 0.02,
+          "sampled_max_R_norm_over_sigma": 0.01862963383193498,
+          "uniform_K_h2_expJh_over_2_bound": 0.09803372781235573,
+          "measured_over_uniform_bound": 0.190032902427148,
+          "R_over_sigma_h_squared": 11.643521144959362,
+          "max_endpoint_difference_1024_vs_2048": 3.554447978966673e-15,
+          "normalized_R_refinement_defect": 2.0078238367923023e-13,
+          "complete_flow_center_Euler_defect": 0.0046222256114567895,
+          "sampled_component_increment_over_sigma": [
+            0.2518296992041785,
+            0.11159259619364648
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.36070080770243174,
+            0.20634488607971574
+          ]
+        },
+        {
+          "h": 0.04,
+          "kappa": 1.0,
+          "sigma": 0.04,
+          "sampled_max_R_norm_over_sigma": 0.021109421924099557,
+          "uniform_K_h2_expJh_over_2_bound": 0.09803372781235573,
+          "measured_over_uniform_bound": 0.21532815690233317,
+          "R_over_sigma_h_squared": 13.193388702562222,
+          "max_endpoint_difference_1024_vs_2048": 4.577566798522238e-15,
+          "normalized_R_refinement_defect": 1.0778315928076986e-13,
+          "complete_flow_center_Euler_defect": 0.0046222256114567895,
+          "sampled_component_increment_over_sigma": [
+            0.25092236246448824,
+            0.12570733594744615
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.37649217474417473,
+            0.22213625312145874
+          ]
+        },
+        {
+          "h": 0.04,
+          "kappa": 2.0,
+          "sigma": 0.08,
+          "sampled_max_R_norm_over_sigma": 0.025207766310593897,
+          "uniform_K_h2_expJh_over_2_bound": 0.09803372781235573,
+          "measured_over_uniform_bound": 0.2571336097597303,
+          "R_over_sigma_h_squared": 15.754853944121185,
+          "max_endpoint_difference_1024_vs_2048": 5.3128550954208536e-15,
+          "normalized_R_refinement_defect": 7.2434209121084e-14,
+          "complete_flow_center_Euler_defect": 0.0046222256114567895,
+          "sampled_component_increment_over_sigma": [
+            0.24514637953874305,
+            0.15162561631482316
+          ],
+          "component_Taylor_plus_temporal_bounds": [
+            0.40807490882766073,
+            0.2537189872049447
+          ]
+        }
+      ],
+      "scope": "Numerical precision comparison of selected complete-flow perturbations; not exact continuum execution, global reconstruction stability, or a Trotter-error theorem.",
       "all_assertions_passed": true
     }
   },
