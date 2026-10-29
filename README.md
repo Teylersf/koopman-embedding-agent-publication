@@ -24,9 +24,19 @@ genuine references use the canonical compiled numbering. The agent-only schema
 does not list the human operator as a coauthor; his credit is explicit in the
 article and this README.
 
-Prepared packages are not proof of submission or acceptance. AgentPub and AAES
-submission is sequenced after the Publish.fun review closes. Update the
-publication context with verified identifiers and outcomes before submitting.
+The canonical Taylor Kalin paper is [published by Publish.fun as
+PF-261028.000002](https://publish.fun/papers/PF-261028.000002) after AI review.
+After verifying that publication, this agent edition was submitted to
+[AgentPub as paper_2026_3860f6](https://agentpub.org/papers/paper_2026_3860f6),
+which returned HTTP 201 and status `submitted`; AgentPub acceptance is not
+claimed. AAES registration returned HTTP 403, `Could not verify GitHub account`,
+and created no paper ID. [Current receipts](publication-status.json) record
+these outcomes. The preparation context describes the state before submission.
+
+AgentPub preserves the scientific section text, but its viewer shows figure
+links as text and leaves table-cell math unrendered. The typeset canonical PDF
+has complete formatting. The verification receipt records normalized metadata
+and omitted reference-venue strings separately from the intact scientific text.
 
 Manuscript text and figures are offered under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) with the canonical

@@ -2,7 +2,7 @@
   "study": "Geometric stability and observable inference in dual Koopman-von Neumann embeddings: Corrections and reproducible counterexamples",
   "canonical_author": "Taylor Kalin",
   "canonical_repository": "https://github.com/Teylersf/koopman-embedding-corrections",
-  "status": "journal_and_preprints_published_agent_venues_ready",
+  "status": "journal_and_preprints_published_agent_venues_attempted",
   "review_sequence": "GitHub and AiraXiv preprint, Publish.fun review, then AgentPub and AAES after the Publish.fun review closes",
   "platforms": {
     "github": {
@@ -47,27 +47,39 @@
       "public_id": "PF-261028.000002",
       "published_at_utc": "2026-10-28T23:30:46.824Z",
       "url": "https://publish.fun/papers/PF-261028.000002",
-      "checked_at_utc": "2026-10-29T17:11:21.404806+00:00",
+      "checked_at_utc": "2026-10-29T17:15:06.129047+00:00",
       "accepted_by_venue": true,
       "review_type": "AI review; no independent human review asserted"
     },
     "agentpub": {
-      "status": "prepared_not_submitted",
+      "status": "submitted",
       "agent_byline": "Lattice Audit Agent",
       "human_operator": "Taylor Kalin",
       "package_version": "1.1.1",
-      "reason": "Publish.fun editorial record remains active after a review-pipeline failure; awaiting recovery or confirmation that review elsewhere may proceed.",
-      "preflight_passed": true
+      "preflight_passed": true,
+      "http_status": 201,
+      "checked_at_utc": "2026-10-29T17:15:05.396102+00:00",
+      "paper_id": "paper_2026_3860f6",
+      "message": "Paper submitted. 3 reviewers will be assigned within 1 hour.",
+      "url": "https://agentpub.org/papers/paper_2026_3860f6",
+      "scientific_section_texts_verified": true,
+      "content_verification_receipt": "agentpub-content-verification.json",
+      "metadata_normalization_and_omissions_recorded": true,
+      "canonical_pdf_has_complete_formatting": true
     },
     "aaes": {
-      "status": "prepared_not_submitted",
+      "status": "registration_failed",
       "agent_byline": "Lattice Audit Agent",
       "human_operator": "Taylor Kalin",
       "prepared_repository": "https://github.com/Teylersf/koopman-embedding-agent-publication",
       "package_version": "1.1.1",
-      "reason": "Publish.fun editorial record remains active after a review-pipeline failure; awaiting recovery or confirmation that review elsewhere may proceed."
+      "http_status": 403,
+      "checked_at_utc": "2026-10-29T17:15:08.474003+00:00",
+      "error": "Could not verify GitHub account",
+      "registry_paper_id": null,
+      "registration_attempts": 1
     }
   },
-  "checked_at_utc": "2026-10-29T17:14:21.976950+00:00",
+  "checked_at_utc": "2026-10-29T17:19:35.742115+00:00",
   "canonical_version": "1.1.1"
 }
