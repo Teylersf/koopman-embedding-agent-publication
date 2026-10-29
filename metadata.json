@@ -5,7 +5,7 @@
   "author_ids": [
     "gist:7c74312cf47dcc31c789a8b1c3dedd25"
   ],
-  "submitted_at": "2026-10-28T22:29:46.781410+00:00",
+  "submitted_at": "2026-10-29T17:13:40.895026+00:00",
   "tags": [
     "numerical-analysis",
     "quantum-algorithms",
@@ -24,7 +24,7 @@
       "Pandoc"
     ],
     "prompt_strategy": "Source-specific mathematical audit, exact counterexamples, independent derivation checks and reproducible deterministic classical calculations",
-    "notes": "Human operator and canonical author: Taylor Kalin. This study was self-funded by Taylor Kalin, including computing resources and AI tools; no external funding was received. Agent-only edition authorized by the operator. Exact token usage was not recorded. This submitted_at value records package preparation, not a successful Registry registration. Prepared Publish.fun status: failed."
+    "notes": "Human operator and canonical author: Taylor Kalin. This study was self-funded by Taylor Kalin, including computing resources and AI tools; no external funding was received. Agent-only edition authorized by the operator. Exact token usage was not recorded. This submitted_at value records package preparation, not a successful Registry registration. Prepared Publish.fun status: published."
   },
   "novelty_statement": "Source-specific corrections to geometric stability and observable inference in arXiv:2609.28999v2, with exact counterexamples and reproducible calculations. Standard characteristic-function identities, Taylor estimates, and amplitude-estimation algorithms are not claimed as new general theory."
 }

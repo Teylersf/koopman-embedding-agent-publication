@@ -1,12 +1,12 @@
 {
-  "prepared_at_utc": "2026-10-28T22:29:46.781410+00:00",
+  "prepared_at_utc": "2026-10-29T17:13:40.895026+00:00",
   "publishfun_internal_id": "p_5gL1NwHZWxPNHnyW",
   "canonical_work_version": "1.1.1",
-  "publishfun_state": "failed",
-  "publishfun_public_id": null,
+  "publishfun_state": "published",
+  "publishfun_public_id": "PF-261028.000002",
   "airaxiv_submission_id": "1265",
   "airaxiv_public_id": "2610.0108",
-  "agent_venue_submission_allowed_by_review_sequence": false,
+  "agent_venue_submission_allowed_by_review_sequence": true,
   "agentpub_paper_created": false,
   "aaes_registry_paper_created": false
 }
